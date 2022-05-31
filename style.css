@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    max-width:1900px; 
+    margin:0 auto; 
+}
+/*começa minha header*/
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-right: 10rem;
+    padding-left: 15rem;
+    height: 10rem;
+}
+.menu{
+    display: none;
+    background-image: url(./imagens/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black; 
+    padding: 4rem;
+    height: 10rem;
+    width: 15rem;
+}
+.portflow-logo {
+    width: 30rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+.ul-nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    width: 30rem;
+}
+a{
+    color: black;
+}
+/*começa minha main*/
+/*main part1*/
+.laranja-azul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 7rem;
+    background-image: url(./imagens/laranja\ azul\ recorte.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 45rem;
+}
+.texto-laranja-azul{
+ margin-right: 30rem;
+}
+.texto-laranja-azul h2{
+    color: white;  
+    font-size: 6rem;  
+}
+.texto-laranja-azul p{
+    margin-top: 3rem;
+    color: white;  
+    font-size: 2.5rem;  
+}
+/*main part2*/
+.imagens{
+    margin-top: 15rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagens div{
+    margin: -0.2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+.imagens img{
+    width: 98%;
+    margin: 0.4rem;
+}
+/*começa minha footer*/
+footer{
+  padding: 2rem 0;
+  display: flex;
+  position: relative;
+  top: 10rem; 
+  width: 100%;
+  background-color:#F6F6F6;
+}
+.pos-creditos{
+    margin-left: 3rem;
+    width: 80rem;
+    justify-content: space-between;
+    display: flex;
+}
+.redes-socias{
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright{    
+    display: flex;
+    justify-content: space-around;
+    width: 48rem;
+}
+.botao{
+    display: none;
+    font-size: 0.6rem;
+    padding: 0.4rem;
+    color: #CCCCCC;
+    background-color: black;
+}
+@media(max-width: 1267px){
+    /*header*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        padding-right: 5rem;
+        padding-left: 10rem;
+        height: 10rem;
+    }
+    /*footer*/
+    .redes-socias{
+        width: 15rem;
+    }
+    .redes-socias img{
+        height: 1.5rem;
+    }
+    .copyright{    
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: space-around;
+        width: 35rem;
+    }
+    .pos-creditos{
+        margin-left: 3rem;
+        width: 55rem;
+        justify-content: space-between;
+        display: flex;
+    }
+}
+@media(max-width: 917px){
+    /*header*/
+    .navbar{
+        display: flex;
+        height: 4rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    .menu{
+        display: block;
+        padding: 0;
+        width: 5rem;
+        height: 4.3rem;
+    }
+    .portflow-logo {
+        width: 30rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        display: flex;
+    }
+    .ul-nav-bar{
+        display:none;
+    }
+    /*main part1*/
+    .laranja-azul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 4rem;
+        background-image: url(./imagens/laranja\ azul\ recorte.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 45rem;
+    }
+    /*main part 2*/
+    .imagens div{
+        flex-direction: column;
+    }
+    /*footer*/
+    .redes-socias{
+        height: 3rem;
+        width: 22rem;
+        padding: 1rem;
+        background-color: #7FDBD4;
+    }
+    .botao{
+        display: block;
+    }
+    .pos-creditos{
+        flex-direction: column;
+        margin-left: 2rem;
+        width: 40rem;
+        height: 7rem;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .copyright{
+        width: 19rem;
+        flex-direction: column;
+    }
+    .elementos{
+        align-items: center;
+        display: flex;
+    }
+    .paragrafos{
+    }
+    }
