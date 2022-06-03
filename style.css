@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -39,6 +38,7 @@ header{
     width: 15rem;
 }
 .portflow-logo {
+    font-style: ;
     width: 30rem;
     height: 4rem;
     font-size: 1.5rem;
@@ -49,6 +49,10 @@ header{
     justify-content: space-around;
     font-size: 1.3rem;
     width: 30rem;
+}
+.ul-nav-bar li:hover{
+    font-size: 2rem;
+    font-style: bold;
 }
 a{
     color: black;
@@ -63,12 +67,12 @@ a{
     top: 7rem;
     background-image: url(img/laranja\ azul\ recorte.png);
     background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     height: 45rem;
 }
 .texto-laranja-azul{
- margin-right: 30rem;
+ display: flex;
+ flex-direction: column;
 }
 .texto-laranja-azul h2{
     color: white;  
@@ -192,10 +196,27 @@ footer{
         top: 4rem;
         background-image: url(./img/laranja\ azul\ recorte.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-position:right 5rem;
         width: 100%;
         height: 45rem;
     }
+    .texto-laranja-azul{
+        
+        margin-top: 23rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       .texto-laranja-azul h2{
+           color: white;  
+           font-size: 4rem;  
+       }
+       .texto-laranja-azul p{
+           margin-top: 3rem;
+           color: white;  
+           font-size: 1.5rem;  
+       }
     /*main part 2*/
     .imagens div{
         flex-direction: column;
@@ -229,4 +250,51 @@ footer{
     }
     .paragrafos{
     }
+    }
+    @media(max-width: 779px){
+        .laranja-azul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 4rem;
+            background-image: url(./img/laranja\ azul\ recorte.png);
+            background-repeat: no-repeat;
+            background-position:; 
+            width: 100%;
+            height: 45rem;
+    }
+    @media(max-width: 431px) {
+        .redes-socias{
+            height: 3rem;
+            width: 13rem;
+            padding: 1rem;
+            background-color: #7FDBD4;
+        }
+        .botao{
+            width: 100%;
+            font-size: 0.5rem;
+            display: block;
+        }
+        .pos-creditos{
+            flex-direction: column;
+            margin-left: 2rem;
+            width: 80%;
+            height: 7rem;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+        }
+        .copyright{
+            width: 19rem;
+            flex-direction: column;
+        }
+        .elementos{
+            margin-right: 3rem;
+            width: 70%;
+            align-items: center;
+            display: flex;
+        }
+        .paragrafos{
+            font-size: 0.6rem;
     }
